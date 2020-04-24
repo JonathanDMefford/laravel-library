@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontpage');
 });
+
+Route::get('/books', 'BookController@index')->name('books.index');
+Route::get('/authors', 'AuthorController@index')->name('authors.index');
+Route::get('/users', 'UserController@index')->name('users.index');
