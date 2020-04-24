@@ -6,13 +6,14 @@
         <div id="page" class="container">
             @foreach ($books as $book)
             <div id="content">
-                <div class="title">
-                <h2>
+                <div class="row mb-5">
+                <h3>
                     <a href="{{ $book->path() }}">
                         {{ $book->title }}
                     </a>
-                </h2>
+                </h3>
                 {{ $book->description }}
+                <br>
                 </div>
             </div>
             @endforeach

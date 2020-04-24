@@ -13,8 +13,8 @@
                 <p>
                     {{ $user->email}}
                 </p>
-                <br>
             </div>
+            <br>
             @endforeach
         </div>
     </div>
